@@ -59,5 +59,40 @@
             </objects>
             <point key="canvasLocation" x="136.5" y="133"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="P1u-i2-KAq">
+            <objects>
+                <viewController id="plZ-hu-psw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EdA-Sy-DpD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7a-E0-Q4p">
+                                <rect key="frame" x="106.66666666666669" y="84" width="163" height="179.33333333333331"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a piece of paper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KO3-6t-aK9">
+                                <rect key="frame" x="98.666666666666686" y="313.33333333333331" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KO3-6t-aK9" firstAttribute="top" secondItem="l7a-E0-Q4p" secondAttribute="bottom" constant="50" id="Li3-sR-mBe"/>
+                            <constraint firstItem="KO3-6t-aK9" firstAttribute="centerX" secondItem="EdA-Sy-DpD" secondAttribute="centerX" id="cjA-I2-vgI"/>
+                            <constraint firstItem="l7a-E0-Q4p" firstAttribute="centerX" secondItem="EdA-Sy-DpD" secondAttribute="centerX" id="eLU-h1-r5Z"/>
+                            <constraint firstItem="l7a-E0-Q4p" firstAttribute="top" secondItem="fvE-6v-MeY" secondAttribute="top" constant="40" id="xZt-2t-PLv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fvE-6v-MeY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiM-Wl-a77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="132"/>
+        </scene>
     </scenes>
 </document>
