@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var referenceView: UITableView!
     
+    var emojiTable = ["😀", "😇", "😨", "💌", "🦐", "🥋", "🎾", "🏅", "🎈", "📊"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,11 +25,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // how many rows should UITableView have?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 // define number of cells
+        return emojiTable.count // define # of cells, counting array above
     }
     
     // what should I show in a cell in UITableView?
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(indexPath.row)
         let cell = UITableViewCell() // create a new UItableView cell in a constant
         cell.textLabel?.text = "Hello" // every cell will have this label
         return cell
