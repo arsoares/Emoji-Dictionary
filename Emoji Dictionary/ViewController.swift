@@ -35,6 +35,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = emojiTable[indexPath.row] // every cell will have an emoji
         return cell
     }
+    //
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: "📄")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
