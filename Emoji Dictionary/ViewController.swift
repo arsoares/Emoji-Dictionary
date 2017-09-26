@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell() // create a new UItableView cell in a constant
-        cell.textLabel?.text = "Hello" // every cell will have this label
+        cell.textLabel?.text = emojiTable[indexPath.row] // every cell will have an emoji
         return cell
     }
 
