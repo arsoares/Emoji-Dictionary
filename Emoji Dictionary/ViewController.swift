@@ -20,6 +20,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         referenceView.delegate = self
         
     }
+    
+    // how many rows should UITableView have?
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10 // define number of cells
+    }
+    
+    // what should I show in a cell in UITableView?
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell() // create a new UItableView cell in a constant
+        cell.textLabel?.text = "Hello" // every cell will have this label
+        return cell
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
